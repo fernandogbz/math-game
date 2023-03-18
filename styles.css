@@ -20,3 +20,11 @@ body {
   padding: 5em 3em;
   border-radius: 0.5em;
 }
+
+.container h3 {
+  font-size: 1.2em;
+  color: #312569;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.8em;
+}
