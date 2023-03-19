@@ -11,4 +11,5 @@ let operatorQuestion;
 // Random Value Generator
 const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-
+const questionGenerator = () => {
+}
