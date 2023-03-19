@@ -32,6 +32,21 @@ const questionGenerator = () => {
   // (1 for num1, 2 for num2, 3 for operator, anything else(4) for solution)
   let randomInpt = randomValue(1, 5);
   console.log(randomInpt);
+
+  if (randomInpt == 1) {
+    answerValue = num1;
+    question.innerHTML = `<input type="number" id="inputValue" placeholder="?"\> ${randomOperator} ${num2} = ${solution}`
+  } else if (randomInpt == 2) {
+    answerValue = num2;
+    question.innerHTML = `${num1} ${randomOperator} <input type="number" id="inputValue" placeholder="?"\> = ${solution}`
+  } else if (randomInpt == 3) {
+    answerValue = randomOperator;
+    operatorQuestion = true;
+    question.innerHTML = `${num1} <input type="number" id="inputValue" placeholder="?"\> ${num2} = ${solution}`
+  } else {
+    answerValue = solution;
+    question.innerHTML = `${num1} ${randomOperator} ${num2} = <input type="number" id="inputValue" placeholder="?"\>`
+  }
 };
   
 // Start Game
