@@ -16,13 +16,17 @@ const questionGenerator = () => {
   let [num1, num2] = [randomValue(1, 20), randomValue(1, 20)];
   console.log(num1, num2);
 
-  // For getting random operator
+  // To get random operator
   let randomOperator = operators[Math.floor(Math.random() * operators.length)];
   console.log(randomOperator);
 
   if (randomOperator == "-" && num2 > num1) {
     [num1, num2] = [num2, num1];
   }
+
+  // Solve equation
+  let solution = eval(`${num1}${randomOperator}${num2}`);
+  console.log(num1, randomOperator, num2, solution);
 };
   
 // Start Game
