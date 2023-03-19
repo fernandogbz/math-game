@@ -8,3 +8,7 @@ const errorMessage = document.getElementById("error-msg");
 let answerValue;
 let operatorQuestion;
 
+// Random Value Generator
+const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+
