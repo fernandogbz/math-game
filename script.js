@@ -25,4 +25,7 @@ const questionGenerator = () => {
   }
 };
   
-questionGenerator();
+// Start Game
+startBtn.addEventListener("click", () => {
+  questionGenerator();
+})
