@@ -15,6 +15,10 @@ const questionGenerator = () => {
   // Two random values between 1 and 20
   let [num1, num2] = [randomValue(1, 20), randomValue(1, 20)];
   console.log(num1, num2);
+
+  // For getting random operator
+  let randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  console.log(randomOperator);
 };
   
 questionGenerator();
