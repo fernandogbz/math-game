@@ -57,3 +57,11 @@ startBtn.addEventListener("click", () => {
   errorMessage.classList.add("hide");
   questionGenerator();
 })
+
+// Stop Game
+const stopGame = (resultText) => {
+  result.innerHTML = resultText;
+  startBtn.innerHTML = "Restart";
+  // controls.classList.remove("hide");
+  // startBtn.classList.add("hide");
+}
