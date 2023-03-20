@@ -54,11 +54,14 @@ const questionGenerator = () => {
     let userInput = document.getElementById("inputValue").value;
     // If user input is not empty
     if(userInput) {
-      
+      // If the user guess is correct
+      if(userInput == answerValue) {
+        stopGame(`Yesssir! <span>Correct</span> Answer`)
+      }
     }
     // If user input is empty
     else {
-      
+
     }
   })
 
