@@ -51,6 +51,19 @@ body {
   padding: 0.2em 0;
 }
 
+.container #question {
+  background-color: #eeedf1;
+  font-size: 2em;
+  font-weight: 600;
+  color: #312569;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.4em 0 1em 0;
+  padding: 1em 0;
+}
+
 .hide {
   display: none;
 }
