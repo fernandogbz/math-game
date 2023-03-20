@@ -1,7 +1,7 @@
 let operators = ["+", "-", "*"];
 const startBtn = document.getElementById("start-btn");
 const question = document.getElementById("question");
-const controls = document.querySelector("controls-container");
+const controls = document.querySelector(".controls-container");
 const result = document.getElementById("result");
 const submitBtn = document.getElementById("submit-btn");
 const errorMessage = document.getElementById("error-msg");
@@ -83,6 +83,9 @@ startBtn.addEventListener("click", () => {
   answerValue = "";
   errorMessage.innerHTML = "";
   errorMessage.classList.add("hide");
+  // Controls and buttons visibility
+  controls.classList.add("hide");
+  startBtn.classList.add("hide");
   questionGenerator();
 })
 
@@ -90,6 +93,6 @@ startBtn.addEventListener("click", () => {
 const stopGame = (resultText) => {
   result.innerHTML = resultText;
   startBtn.innerHTML = "Restart";
-  // controls.classList.remove("hide");
-  // startBtn.classList.add("hide");
+  controls.classList.remove("hide");
+  startBtn.classList.remove("hide");
 }
