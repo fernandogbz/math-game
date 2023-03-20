@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #A0F9D8;
+  background-color: #b3fff6;
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
 }
 
 .container #question {
-  background-color: #eeedf1;
+  background-color: #f6f5f8;
   font-size: 2em;
   font-weight: 600;
   color: #312569;
@@ -75,6 +75,11 @@ body {
   background-color: transparent;
   border-bottom: 0.12em solid #312569;
   margin: 0 0.25em;
+}
+
+.container input:focus {
+  border-color: #1a978d;
+  outline: none;
 }
 
 .hide {
