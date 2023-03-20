@@ -82,6 +82,16 @@ body {
   outline: none;
 }
 
+/* Hide input number arrows */
+.container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container input[type="number"]::-webkit-outer-spin-button, 
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .hide {
   display: none;
 }
