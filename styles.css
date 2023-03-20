@@ -105,6 +105,18 @@ body {
   top: 0;
 }
 
+#start-btn {
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #fff;
+  color: #312569;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8em 1.8em;
+  border-radius: 0.3em;
+}
+
 .hide {
   display: none;
 }
