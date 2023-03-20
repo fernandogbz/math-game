@@ -51,5 +51,9 @@ const questionGenerator = () => {
   
 // Start Game
 startBtn.addEventListener("click", () => {
+  operatorQuestion = false;
+  answerValue = "";
+  errorMessage.innerHTML = "";
+  errorMessage.classList.add("hide");
   questionGenerator();
 })
