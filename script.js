@@ -42,7 +42,7 @@ const questionGenerator = () => {
   } else if (randomInpt == 3) {
     answerValue = randomOperator;
     operatorQuestion = true;
-    question.innerHTML = `${num1} <input type="number" id="inputValue" placeholder="?"\> ${num2} = ${solution}`
+    question.innerHTML = `${num1} <input type="text" id="inputValue" placeholder="?"\> ${num2} = ${solution}`
   } else {
     answerValue = solution;
     question.innerHTML = `${num1} ${randomOperator} ${num2} = <input type="number" id="inputValue" placeholder="?"\>`
@@ -70,9 +70,10 @@ const questionGenerator = () => {
     }
     // If user input is empty
     else {
-
+      errorMessage.classList.remove("hide");
+      errorMessage.innerHTML = "Input Can't Be Empty"
     }
-  })
+  });
 
 };
   
